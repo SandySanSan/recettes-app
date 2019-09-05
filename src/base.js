@@ -3,7 +3,7 @@ import firebase from "firebase/app";
 import "firebase/database";
 
 const firebaseApp = firebase.initializeApp({
-  apiKey: "AIzaSyCvYGNMldZJC1qid-bX38Ui_AtMuTXVjfU",
+  apiKey: process.env.REACT_APP_API_FIREBASE,
   authDomain: "recettesapp.firebaseapp.com",
   databaseURL: "https://recettesapp.firebaseio.com"
 });
